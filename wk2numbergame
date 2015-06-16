@@ -1,0 +1,4 @@
+#Number game
+
+
+number = rand(100)

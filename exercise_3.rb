@@ -18,3 +18,7 @@ age = current_year - birth_year
 
 puts "Your name is " + name + " and you are " + age.to_s + " years old."
 puts name + " was born in " + birth_year.to_s + "."
+
+
+print "\n\n\n"
+puts "Your name is #{name} and you are #{age} years old."
