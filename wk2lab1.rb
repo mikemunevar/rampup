@@ -7,6 +7,6 @@ while (x >= 1) do
 	puts "Take one down pass it around..."
 	puts (x-1).to_s + " bottles of beer on the wall!"
 	
-	x-=1
+	x -= 1
 	puts
 end
