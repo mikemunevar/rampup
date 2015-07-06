@@ -46,6 +46,7 @@ def encrypt(orig_string)
 	cipher = Hash.new
 	while x <= (orig_string.length - 1)
 		cipher[x] = (offset + x).chr
+	#	cipher[x] = letter[x].rotate(offset).chr
 		x += 1
 	end
 
