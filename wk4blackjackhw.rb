@@ -26,6 +26,8 @@ class Blackjack
 	#what is the purpose of << ?
 	def deal_to_player
 		self.player.hand << self.deck.pop
+		#Can also be player.hand << deck.pop
+		# The "self." is implicitly defined in Ruby, it knows to check there first
 	end
 
 
@@ -43,11 +45,13 @@ class Blackjack
 
 	def game_play
 
+
+		#good idea is to wrap these into methods
 		while true do
 			puts "Player you have a total of #{player.total_points} points?"
 
 
-			if player.bust? == false  		# Alternative code is: if player.total_points <= 21
+			if !player.bust?  		# Alternative code is: if player.total_points <= 21
 				puts "Would you like to hit? (y/n)"
 				choice = gets.chomp
 

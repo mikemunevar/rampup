@@ -30,7 +30,9 @@ class Person
 		birthyear = "" 
 	end
 
-	
+	attr_reader:name  # getter only
+	attr_writer:name  # setter only
+	attr_accessor:name  #getter and setter
 	#The following is a getter method
 	def name
 		@name
@@ -62,4 +64,14 @@ person1 = Person.new("John")
 puts person1.name
 person1.name = "Simon" 
 puts person1.name
+
+
+#blackjack game
+# dealer - hand, points, total, hit? bust?
+# Deck of Cards - [ an array ]
+# player hand, points, total, hit?  bust?
+
+#player gets two cards
+# dealer gets two cards
+
 
